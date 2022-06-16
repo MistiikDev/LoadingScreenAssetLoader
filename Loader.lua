@@ -16,7 +16,7 @@ for i, v in pairs(toLoad) do
     bar:TweenSize(UDim2.new(rapport, 0, 1, 0), Enum.EasignDirection.Out, Enum.EasingStyle.Linear, .1, false) 
     
     ContentProvider:PreLoadAsync({v}, function() 
-        loadingText.Text = "Currently loading asset : "..tostring(v.Name)..prcnt.."%"
+        loadingText.Text = "Currently loading asset : "..tostring(v.Name).." / "..prcnt.."%"
     end))    
 end
  
